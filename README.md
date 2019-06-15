@@ -1,4 +1,4 @@
-# Landing-Page-2018
+# Dreams-Landing-Page-2018
 Landing Page (2018).
 
 ## Technologies Used:
