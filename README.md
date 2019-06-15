@@ -1,4 +1,4 @@
-# Dreams-Landing-Page-2018
+# Dreams
 Landing Page (2018).
 
 ## Technologies Used:
@@ -11,10 +11,10 @@ Landing Page (2018).
 
 2. Well Organized Code & Easy to Customize.
 
-3. Well documented
+3. Well documented.
 
-4. Cross Browser Optimization
+4. Cross Browser Optimization.
 
-5. Smooth Animation
+5. Smooth Animation.
 
 6. Built on Bootstrap 4 & Fully Mobile Responsive.
