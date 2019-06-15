@@ -1,0 +1,35 @@
+@import '../helpers/_mixins';
+
+/* Body */
+body { font-family: 'Montserrat', sans-serif; position: static; overflow: auto }
+
+@font-face { font-family: 'Montserrat', sans-serif; src: url(../../fonts/font/Montserrat.ttf) }
+
+/* End Body */
+
+ul, ol { list-style: none; padding: 0 }
+
+a { text-decoration: none; &:hover { text-decoration: none } }
+
+h3, h4 { margin: 10px 0 }
+
+button { cursor: pointer }
+
+h3 { margin: 0 auto 30px }
+
+p, .lead { font-family: "../../fonts/font/OpenSans-Reg"; color: #727272; font-size: 18px }
+
+* i {
+  animation: heart-beat 1.5s infinite ease-in-out;
+  @include prefixer(transition, .5s, webkit moz o ms)
+}
+
+@keyframes heart-beat {
+  0%, 100% {
+        transform: scale(.9)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+}

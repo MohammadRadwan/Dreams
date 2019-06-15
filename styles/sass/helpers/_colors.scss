@@ -1,0 +1,56 @@
+@import '../helpers/_variables';
+@import '../helpers/_mixins';
+
+/* Background Colors */
+
+.interface .content .line,
+footer button
+{ background-color: $subColor !important }
+
+.expertise,
+.team .info span { background-color: #eee }
+
+.team button,
+.brands { border-color: #eee }
+
+.services .group .icons i,
+footer,
+.team .caption ul li a i { background: $mainColor }
+
+.expertise .left .load button { background: #fff }
+
+.team .caption { background: #C8CCCF }
+
+.price .body .buttons { background: #3B4652 }
+
+/* Color */
+.navbar .collapse ul .nav-item.active>.nav-link,
+footer .copy span { color: $subColor !important }
+
+.navbar .navbar-brand,
+.navbar .navbar-toggler .fa.fa-navicon,
+.navbar-nav .nav-item .nav-link,
+.interface .content h1,
+.services .group .icons i,
+.work .img-group .wall .caption .desc h5,
+footer ul,
+footer .copy,
+.price .body .buttons
+ { color: $whiteColor !important }
+
+ .interface .content .lead { color: #cccccc }
+
+ .work .img-group .wall .caption .desc p,
+ .team .info p,
+ .team .caption ul li a i,
+ .team button { color: #eee }
+
+/* Hover */
+.navbar .collapse ul li a:hover { color: $subColor !important }
+
+.expertise .left .load button:hover,
+footer button:hover { color: #fff; background: black }
+
+.team button:hover { background: $mainColor }
+
+.price .body .buttons:hover { background: #fff; color: $mainColor }

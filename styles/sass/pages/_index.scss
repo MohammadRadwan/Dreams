@@ -1,0 +1,278 @@
+@import '../helpers/_variables';
+@import '../helpers/_mixins';
+
+/* Start Interface */
+.interface {
+    @include prefixer(background-size, cover, webkit moz o ms);
+    background: url("../../images/interface/1.jpg") no-repeat center center fixed;
+    height: 760px;
+    position: relative;
+
+    .overlay {
+        @include overlay;
+        background: rgba(#000000, .4);
+        z-index: 1
+    }
+
+    .container {
+        .content {
+            z-index: 2;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: 700;
+                width: 75%;
+                margin: 10px auto;
+                line-height: 1.2em;
+
+                @media #{$maxSmall} { font-size: 2.5rem }
+            }
+
+            .line { margin: 15px 0 !important }
+
+            .lead {
+                font-weight: 400;
+                font-size: 1.3em;
+                line-height: 1.7em;
+                font-family: 'Open Sans', sans-serif;
+                margin: 1em auto;
+                width: 60%
+            }
+        }
+    }
+}
+/* End Interface */
+
+/* Start Services */
+.services {
+    .container {
+        .group {
+            margin-top: 60px;
+
+            .icons {
+                margin-bottom: 30px;
+
+                i { padding: 25px; margin-bottom: 25px }
+            }
+        }
+    }
+}
+/* End Services */
+
+/* Start Work */
+.work {
+    .container-fluid {
+        .img-group {
+            .row {
+                .wall {
+                    height: 190px;
+                    padding: 0;
+                    cursor: pointer;
+
+                    .caption {
+                        @include prefixer(transition, .8s, webkit moz o ms);
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        background: rgba(#000000, .4);
+                        z-index: 1;
+                        
+                        .desc {
+                            @include prefixer(transform, translateY(140%), webkit moz o ms);
+
+                            h5 { margin-bottom: 2px; font-weight: bold }
+                        }
+                    }
+
+                    &:hover .caption { opacity: 1 }
+                }
+            }
+        }
+    }
+}
+/* End Work */
+
+/* Start Testimonials */
+.testimonials {
+    padding: 0 0 50px !important;
+    margin: auto;
+
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                .testimonial {
+                    .avatar {
+                        margin-bottom: 30px;
+
+                        img { width: 150px; height: 150px }
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Testimonials */
+
+/* Start Expertise */
+.expertise {
+    .container {
+        .row {
+            .left {
+                p { margin: 20px 0; line-height: 1.6 !important }
+
+                .content {
+                    margin-top: 40px;
+
+                    .media {
+                        margin-bottom: 50px;
+
+                        i { margin-bottom: 15px }
+                    }
+
+                    .load {
+                        button { width: 200px; height: 50px } 
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Expertise */
+
+/* Start Portofolio */
+.porto {
+    .container {
+        border-bottom: 1px solid #aaa;
+
+        .left {
+            p { margin: 20px 0 }
+    
+            .content {
+                .media {
+                    width: 90%;
+                    margin: 30px auto;
+    
+                    i { margin-bottom: 15px }
+                }
+            }
+        }
+    }
+}
+/* End Portofolio */
+
+/* Start Team */
+.team {
+    @include prefixer(background-size, cover, webkit moz o ms);
+    background: url("../../images/Team/ge_bg_team.jpg") no-repeat center center fixed;
+
+    .member {
+        max-width: 270px;
+        margin: auto;
+
+        .pro { 
+            img { cursor: pointer }
+        }
+
+        .caption {
+            padding: 20px 5px;
+            line-height: 2;
+
+            h5 { font-size: 16px }
+    
+            span {
+                font-size: 14px;
+                opacity: .8;
+                font-weight: 400;
+                letter-spacing: 1px
+            }
+
+            ul {
+                li {
+                    padding: 0 2px;
+
+                    a {
+                        i {
+                            padding: 5px;
+                            border-radius: 50%;
+                            width: 30px;
+                            height: 30px;
+                            font-size: 20px;
+                            line-height: 23px
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    button {
+        width: 215px;
+        height: 40px;
+        background: transparent;
+        font-size: 15px
+    }
+}
+/* End Team */
+
+/* Start Brands */
+.brands {
+    padding: 40px 0 0 !important;
+
+    .item {
+        max-width: 200px;
+        margin-bottom: 40px;
+
+        a {
+            @include prefixer(transition, .5s, webkit moz o ms);
+            opacity: .7;
+
+            &:hover { opacity: 1 } 
+        }
+    }
+}
+/* End Brands */
+
+/* Start Pricing */
+.price {
+    .row {
+        @media #{$maxMedium} { width: 80%; margin: auto }
+
+        .item {
+            margin-top: 40px;
+            border: 1px solid;
+
+            @media #{$maxMedium} { margin-bottom: 40px; margin-top: 0 }
+        
+            .head {
+                border-bottom: 1px solid;
+                padding: 30px 0;
+                line-height: 1;
+               
+                span { font-size: 40px }    
+            }
+
+            .body {
+                ul {
+                    padding: 30px 0 0 !important;
+
+                    li { font-size: 14px }
+                       
+                    .buttons {
+                        width: 40%;
+                        margin: 30px auto;
+                        padding: 10px 5px
+                    }
+                }
+            }
+        }
+        .best {
+            border-top: 3px solid;
+            margin-top: 0;
+            padding: 40px 0 0 !important;
+
+            .head { padding: 0 0 40px !important }   
+        }
+    }
+}
+/* End Pricing */
+  

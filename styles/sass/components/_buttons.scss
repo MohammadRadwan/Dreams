@@ -1,0 +1,11 @@
+@import '../helpers/_mixins.scss';
+
+.buttons {
+    @include prefixer(transition, .7s, webkit moz o ms);
+    border-radius: 40px;
+    border: 1px solid $mainColor;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer
+}

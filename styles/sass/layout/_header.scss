@@ -1,0 +1,52 @@
+@import '../helpers/_variables.scss';
+@import '../helpers/_mixins.scss';
+
+/* Start Header */
+.navbar {
+	padding: 15px;
+	
+	.container {
+		.navbar-brand {
+			@include prefixer(text-shadow, 3px 2px 1px #000, webkit moz o ms);
+			letter-spacing: -1px;
+
+			font: {
+				family: "fonts/font/Kipp No1 Regular.otf";
+				size: 30px;
+				weight: bold;
+				style: italic
+			}
+		}
+
+		.navbar-toggler {
+			span { .fa.fa-navicon { font-size: 30px } }
+		}
+
+		.collapse {
+			ul {
+				@media #{($maxMedium)} {
+					margin: 30px auto 10px;
+					border: 1px solid #eee;
+					padding: 20px
+				}
+
+				li {
+					font: { family: "fonts/font/Montserrat.ttf"; size:18px }
+
+					padding: { right: 10px;	left: 10px }
+
+					a { font-size: 20px	}
+
+					hr {
+						border-top: 1px solid rgba(#eee, .3);
+
+						@media #{($minMedium)} { display: none }
+					}
+				}
+
+				.nav-item.active>.nav-link { background: none !important }
+			}
+		}
+	}
+}
+/* End Header */

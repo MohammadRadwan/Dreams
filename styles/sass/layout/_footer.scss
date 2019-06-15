@@ -1,0 +1,77 @@
+@import '../helpers/_variables.scss';
+
+/* Start Footer */
+footer {
+	padding: 65px 0 0;
+	font-family: 'Open Sans', sans-serif !important;
+
+	.container {
+		.row {
+			.left {
+				h2 {
+					font-size: 40px !important
+				}
+				p {
+
+				}
+				ul {
+					margin-top: 35px;
+
+					@media #{$maxMedium} {
+						width: 77%;
+						margin: auto;
+						margin-bottom: 40px;
+						margin-top: 40px;
+					}
+
+					li {
+						margin-bottom: 20px;
+						font-size: 14px;
+						
+						i { vertical-align: middle; margin-right: .3em }
+    					
+						i.fa-facebook { margin-left: .2em; margin-right: .5em }
+					}
+				}
+			}
+
+			.right {
+				@media #{$maxMedium} {
+					width: 80%;
+					margin: auto;
+				}
+
+				form {
+					input {
+						display: block;
+						padding: .8em;
+						border: 0;
+						margin-bottom: 20px
+					}
+
+					textarea { max-height: 150px; padding: .5em }
+					
+					textarea, input {
+						width: 100%;
+						border-radius: 10px;
+						outline: none
+					}
+
+					button {
+						padding: 15px 20px;
+						border-radius: 25px;
+						font-size: 17px
+					}
+				}
+			}
+		}
+		
+		.copy {
+			border-top: 1px solid #eee;
+			padding: 25px;
+
+			p { font-size: 17px !important }
+		}	
+	}
+}
+/* End Footer */
